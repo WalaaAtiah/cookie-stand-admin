@@ -7,7 +7,7 @@
 ### Object :create a Cookie Stand Admin app using Next.js and style using Tailwind CSS.
 
 
-## [Pull requests]()
+## [Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/1)
 
 ## picture for the application
 
