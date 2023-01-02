@@ -1,3 +1,37 @@
+# LAB - Class 32
+
+## Project: Intro to Next.js & TailwindCSS
+
+## Author: Walaa' Atiyh
+
+### Object :create a Cookie Stand Admin app using Next.js and style using Tailwind CSS.
+
+
+## [Pull requests]()
+
+## picture for the application
+
+1. **home route** <http://localhost:3000/>
+   
+![image](public/assets/home.png)
+
+<br>
+
+2. **about route** <http://localhost:3000/about>
+   
+![image](public/assets/about.png)
+
+<br>
+
+3. **contact Us route** <http://localhost:3000/contactUs>
+   
+![image](public/assets/contact.png)
+
+<br>
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
