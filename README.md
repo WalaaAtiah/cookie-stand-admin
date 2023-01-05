@@ -1,4 +1,4 @@
-# LAB - Class 32
+# LAB - Class 32 ,33
 
 ## Project: Intro to Next.js & TailwindCSS
 
