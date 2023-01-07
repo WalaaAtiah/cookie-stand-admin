@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-   <>
+   <div className='dark:bg-[#0c3135] '>
    <Form />
    <ReportTable />
-   </>
+   </div>
   )
 }

@@ -1,6 +1,6 @@
-# LAB - Class 32 ,33
+# LAB - Class 32 ,33,34
 
-## Project: Intro to Next.js & TailwindCSS
+## Project: Intro to Next.js & TailwindCSS &Context API
 
 ## Author: Walaa' Atiyh
 
@@ -9,25 +9,35 @@
 
 ## [lab 32 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/1)
 ## [lab 33 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/3)
+## [lab 34 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/3)
 
 ## picture for the application
 
 1. **home route** <http://localhost:3000/>
-   
+
+* Light theme  
 ![image](public/assets/home.png)
+![image](public/assets/home2.png)
+
+* Dark theme
+![image](public/assets/home_dark.png)
+![image](public/assets/home2_dark.png)
 
 <br>
 
 2. **about route** <http://localhost:3000/about>
    
-![image](public/assets/about.png)
+   ![image](public/assets/about.png)
+   ![image](public/assets/about-dark.png)
+   
 
 <br>
 
 3. **contact Us route** <http://localhost:3000/contactUs>
    
-![image](public/assets/contact.png)
-
+   ![image](public/assets/contact.png)
+   ![image](public/assets/contact-dark.png)
+   
 <br>
 
 

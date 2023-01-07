@@ -16,17 +16,17 @@ export default function ReportTable() {
 
 
     return (
-        <div className=" mx-60 ">
+        <div className=" mx-60">
 
-            <section className="w-full pt-10 text-center shadow-lg shadow-black-50 pb-5 ">
-            <button type="button" onClick={onClickHandler} className="  rounded bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 m-3 ml-10 ">
+            <section className="w-full pt-10 pb-5 text-center shadow-lg shadow-black-50 dark:text-[#9ab9bc]">
+            <button type="button" onClick={onClickHandler} className="px-4 py-2 m-3 ml-10 text-white bg-blue-500 rounded hover:bg-blue-600">
                         OverView
                     </button>
-                {!flage &&<p className="mb-3 font-bold text-lg">No Cookie Stands Available</p>}
+                {!flage &&<p className="mb-3 text-lg font-bold">No Cookie Stands Available</p>}
                 {/* {data.length > 0 && */}
-                {flage &&<table className="w-11/12 ml-5 mb-5">
-                    <thead className="divide-y divide-slate-200">
-                        <tr className=" bg-cyan-700 hover:text-white ">
+                {flage &&<table className="w-11/12 mb-5 ml-5">
+                    <thead className="divide-y divide-slate-200 dark:text-black">
+                        <tr className=" bg-cyan-700 hover:text-white">
                             <th className="border-[2px] border-gray-200  ">
                                 Location
                             </th>
@@ -79,13 +79,13 @@ export default function ReportTable() {
 
 
                     </thead>
-                    <tbody className="divide-y divide-slate-200 mb-5">
+                    <tbody className="mb-5 divide-y divide-slate-200">
 
 
 
                         {staticdata.map((item) => {
                             return (
-                                <tr className="hover:bg-cyan-500  hover:border-[2px] hover:border-gray-200">
+                                <tr className="hover:bg-cyan-500  hover:border-[2px] hover:border-gray-200 dark:hover:text-black">
                                     <td className="border-[1px] border-cyan-700 hover:border-gray-200">
                                         {item.location}
                                     </td>
@@ -131,7 +131,7 @@ export default function ReportTable() {
                                     <td className="border-[1px] border-cyan-700 hover:border-gray-200">
                                         {item.time_sale['7pm']}
                                     </td>
-                                    <td className=" bg-slate-200 font-bold border-[1px] border-cyan-700 hover:border-gray-200">
+                                    <td className=" bg-slate-200 font-bold border-[1px] border-cyan-700 hover:border-gray-200 dark:text-black dark:bg-slate-400">
                                         {total[item.location]}
                                     </td>
 
@@ -139,7 +139,7 @@ export default function ReportTable() {
 
                             );
                         })}
-                        <tr className=" bg-slate-200 hover:bg-cyan-500  hover:border-[2px] hover:border-gray-200">
+                        <tr className=" bg-slate-200 hover:bg-cyan-500  hover:border-[2px] hover:border-gray-200 dark:text-black dark:bg-slate-400 dark:hover:bg-cyan-500 ">
                             <td className=" font-bold border-[1px] border-cyan-700 hover:border-gray-200">
                                 Total
                             </td>
@@ -205,7 +205,7 @@ export default function ReportTable() {
 
             </section>
 
-            <section className="w-full pt-10  shadow-lg shadow-black-50 pb-5 ">
+            <section className="w-full pt-10 pb-5 shadow-lg shadow-black-50 dark:text-[#829c9e]">
 
             {!flage &&<h2 className="ml-8"> 0 Locations World Wide </h2>}
             {flage &&<h2 className="ml-8"> 8 Locations World Wide </h2>}

@@ -39,29 +39,29 @@ export default function Form() {
 
 
     return (
-        <div className=" mx-60 ">
-            <form onSubmit={submitHandel} className="form my-6 8/12 text-center w-full py-10 text-center shadow-lg shadow-black-50 	">
-                <h1 className="text-2xl font-semibold pb-5">Cookie Stand Admin</h1>
-                <div className="flex flex-col text-sm mb-2">
+        <div className="py-10 mx-60">
+            <form onSubmit={submitHandel} className="w-full py-10 mb-6 text-center shadow-lg form 8/12 shadow-black-50 dark:border-[#3FA4B0] dark:border-2 rounded-xl dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)] dark:text-[#579ca5]">
+                <h1 className="pb-5 text-2xl font-semibold">Cookie Stand Admin</h1>
+                <div className="flex flex-col mb-2 text-sm">
                     <section>
-                        <label for="Location" className="font-bold mb-2 text-gray-800 pr-3 " >Location :</label>
-                        <input onChange={Handellocation} type="text" id="Location" name="Location" placeholder="Barcelona " className=" appearance-none border border-gray-200 p-2 focus:outline-none focus:border-gray-500 rounded-lg w-9/12" />
+                        <label for="Location" className="pr-3 mb-2 font-bold text-gray-800 " >Location :</label>
+                        <input onChange={Handellocation} type="text" id="Location" name="Location" placeholder="Barcelona " className="w-9/12 p-2 border border-gray-200 rounded-lg appearance-none focus:outline-none focus:border-gray-500" />
                     </section>
                 </div>
-                <div className="flex text-sm mb-2 pl-16 py-3">
+                <div className="flex py-3 pl-16 mb-2 text-sm">
                     <section className="grid mx-3">
                         <label for="MinCPH" className="font-bold">Minimum Customers per Hours</label>
-                        <input   className="mt-3" type="number" id="MinCPH" name="MinCPH" placeholder="2 " onChange={HandelMinimum} />
+                        <input   className="mt-3 dark:text-[#0c1314]" type="number" id="MinCPH" name="MinCPH" placeholder="2 " onChange={HandelMinimum} />
                     </section>
                     <section className="grid mx-3">
                         <label for="MaxCPH" className="font-bold">Maximum Customers per Hours</label>
-                        <input  className="mt-3" type="number" id="MaxCPH" name="MaxCPH" placeholder="4 " onChange={HandelMaximum} />
+                        <input  className="mt-3 dark:text-[#0c1314]" type="number" id="MaxCPH" name="MaxCPH" placeholder="4 " onChange={HandelMaximum} />
                     </section>
                     <section className="grid mx-3">
                         <label for="Average" className="font-bold">Average Cookies per Sale</label>
-                        <input className="mt-3" type="text" id="Average" name="Average" placeholder="2.5" onChange={HandelAverage} />
+                        <input className="mt-3 dark:text-[#0c1314]" type="text" id="Average" name="Average" placeholder="2.5" onChange={HandelAverage} />
                     </section>
-                    <button type="submit" className="  rounded bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 m-3 ml-10 ">
+                    <button type="submit" className="px-4 py-2 m-3 ml-10 text-white bg-blue-500 rounded hover:bg-blue-600">
                         Create
                     </button>
                 </div>
@@ -70,13 +70,13 @@ export default function Form() {
 
             </form>
 
-            <section className="w-full pt-10 text-center shadow-lg shadow-black-50 pb-5 ">
-            {data.length == 0 &&<p className="mb-3 font-bold text-lg">Report Table Coming Soon...</p>}
-            {data.length > 0 &&<p className="mb-3 font-bold text-lg"> Report Table </p> }
+            <section className="w-full pt-10 pb-5 text-center shadow-lg shadow-black-50 dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)] dark:text-[#c2dcdc] ">
+            {data.length == 0 &&<p className="mb-3 text-lg font-bold">Report Table Coming Soon...</p>}
+            {data.length > 0 &&<p className="mb-3 text-lg font-bold"> Report Table </p> }
                 {data.length > 0 &&
-                <table className="w-11/12 ml-5 mb-5">
+                <table className="w-11/12 mb-5 ml-5">
                     <thead className="divide-y divide-slate-200">
-                        <tr className=" bg-cyan-700 hover:text-white ">
+                        <tr className=" bg-cyan-700 hover:text-white dark:hover:text-black">
                             <th className="border-[2px] border-gray-200  ">
                                 Location
                             </th>
@@ -93,11 +93,11 @@ export default function Form() {
 
 
                     </thead>
-                    <tbody className="divide-y divide-slate-200 mb-5">
+                    <tbody className="mb-5 divide-y divide-slate-200 ">
                         {data.length > 0 &&
                             data.map((item) => {
                                 return (
-                                    <tr className="hover:bg-cyan-500  hover:border-[2px] hover:border-gray-200">
+                                    <tr className="hover:bg-cyan-500  hover:border-[2px] hover:border-gray-200 dark:hover:bg-cyan-800">
                                         <td className="border-[1px] border-cyan-700 hover:border-gray-200">
                                             {item.location}
                                         </td>
