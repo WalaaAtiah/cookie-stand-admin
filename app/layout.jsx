@@ -1,6 +1,8 @@
+"use client"
 import './globals.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import ThemeWrapper from './Context/theme'
 
 export default function RootLayout({ children }) {
   return (
@@ -10,13 +12,16 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <ThemeWrapper>
+
+      <body className='dark:bg-[#0c3135] 	 '>
         <Header />
-        <main>
+        <main className='dark:bg-[#0c3135]'>
           {children}
         </main>
         <Footer />
       </body>
+      </ThemeWrapper>
     </html>
   )
 }
