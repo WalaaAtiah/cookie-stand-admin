@@ -9,7 +9,7 @@
 
 ## [lab 32 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/1)
 ## [lab 33 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/3)
-## [lab 34 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/3)
+## [lab 34 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/4)
 
 ## picture for the application
 
