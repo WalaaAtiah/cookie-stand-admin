@@ -3,6 +3,8 @@ import './globals.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import ThemeWrapper from './Context/theme'
+import LoginForm from './components/LoginForm'
+import { AuthWrapper } from './Context/Auth'
 
 export default function RootLayout({ children }) {
   return (
@@ -13,6 +15,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <ThemeWrapper>
+        <AuthWrapper>
 
       <body className='dark:bg-[#0c3135] 	 '>
         <Header />
@@ -21,6 +24,8 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
       </body>
+        </AuthWrapper>
+  
       </ThemeWrapper>
     </html>
   )

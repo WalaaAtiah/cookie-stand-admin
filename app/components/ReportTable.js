@@ -16,7 +16,7 @@ export default function ReportTable() {
 
 
     return (
-        <div className=" mx-60">
+        <div className=" mx-60 shadow-[0_1px_1px_1px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)]">
 
             <section className="w-full pt-10 pb-5 text-center shadow-lg shadow-black-50 dark:text-[#9ab9bc]">
             <button type="button" onClick={onClickHandler} className="px-4 py-2 m-3 ml-10 text-white bg-blue-500 rounded hover:bg-blue-600">

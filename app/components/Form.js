@@ -40,7 +40,7 @@ export default function Form() {
 
     return (
         <div className="py-10 mx-60">
-            <form onSubmit={submitHandel} className="w-full py-10 mb-6 text-center shadow-lg form 8/12 shadow-black-50 dark:border-[#3FA4B0] dark:border-2 rounded-xl dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)] dark:text-[#579ca5]">
+            <form onSubmit={submitHandel} className="w-full py-10 mb-6 text-center shadow-lg form 8/12 shadow-black-50 border-[#3FA4B0] border-2  shadow-[0_1px_1px_2px_rgba(250,250,250,0.1)] dark:border-[#3FA4B0] dark:border-2 rounded-xl dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)] dark:text-[#579ca5]">
                 <h1 className="pb-5 text-2xl font-semibold">Cookie Stand Admin</h1>
                 <div className="flex flex-col mb-2 text-sm">
                     <section>
@@ -70,7 +70,7 @@ export default function Form() {
 
             </form>
 
-            <section className="w-full pt-10 pb-5 text-center shadow-lg shadow-black-50 dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)] dark:text-[#c2dcdc] ">
+            <section className="w-full pt-10 pb-5 text-center shadow-[0_1px_1px_1px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_1px_1px_rgba(250,250,250,0.1)] dark:text-[#c2dcdc] ">
             {data.length == 0 &&<p className="mb-3 text-lg font-bold">Report Table Coming Soon...</p>}
             {data.length > 0 &&<p className="mb-3 text-lg font-bold"> Report Table </p> }
                 {data.length > 0 &&
