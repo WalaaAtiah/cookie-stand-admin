@@ -10,13 +10,13 @@ export default function ThemeWrapper({children}){
     function initialThemeHandle(){
         const mode = JSON.parse(localStorage.getItem('mode'))
         if (mode==false){
-            console.log(1,isDarkTheme)
+            // console.log(1,isDarkTheme)
             setIsDarkTheme(false)   
             document.querySelector("body").classList.remove("dark"); 
         }
         // take the initial value
         else{
-        console.log(2,isDarkTheme)
+        // console.log(2,isDarkTheme)
         isDarkTheme && document.querySelector("body").classList.add("dark"); // add dark class to the body element
     }}
     
