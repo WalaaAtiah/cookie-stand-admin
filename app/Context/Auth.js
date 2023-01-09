@@ -14,7 +14,7 @@ export  function AuthWrapper({children}){
     async function login(userInfo) {
         // end a request to the server 
         console.log(1,userInfo)
-        const url = "http://localhost:8000/api/token/"; // the server url
+        const url = "https://cookie-w-a.herokuapp.com/api/token/"; // the server url
         try{
 
             const res = await axios.post(url, userInfo);
