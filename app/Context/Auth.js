@@ -17,7 +17,7 @@ export  function AuthWrapper({children}){
         const url = "https://cookie-w-a.herokuapp.com/api/token/"; // the server url
         try{
 
-            const res = await axios.post(url, userInfo);
+            const res = await axios.post(url, userInfo,{withCredentials:true});
             console.log(2,res.data)
             SetGlobalState({
                 tokens : res.data,
