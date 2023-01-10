@@ -1,4 +1,4 @@
-# LAB - Class 32 ,33,34,35
+# LAB - Class 32 ,33,34,35,36
 
 ## Project: Intro to Next.js & TailwindCSS &Context API
 
@@ -14,6 +14,7 @@
 ### [lab 33 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/3)
 ### [lab 34 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/4)
 ### [lab 35 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/6)
+### [lab 36 Pull requests](https://github.com/WalaaAtiah/cookie-stand-admin/pull/7)
 
 ## picture for the application
 
