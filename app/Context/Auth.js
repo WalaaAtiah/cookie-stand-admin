@@ -9,6 +9,7 @@ export  function AuthWrapper({children}){
     const [globalState, SetGlobalState] = useState({
         tokens : null,
         login,
+        username:""
     })
 
     async function login(userInfo) {
@@ -22,6 +23,7 @@ export  function AuthWrapper({children}){
             SetGlobalState({
                 tokens : res.data,
                 login,
+                username:userInfo.username,
             })
         }catch {
             console.log("error")
